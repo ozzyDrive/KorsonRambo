@@ -13,4 +13,4 @@ RUN mv /usr/local/bin/ffmpeg /usr/local/bin/ffmpeg.exe
 RUN pip install discord.py[voice]
 RUN pip install youtube_dl
 
-CMD [ "python", "./main.py" , "ODkxMDgyOTUyNzI4MDE0OTE5.YU5Lqw.WeynBWyhDlX3cntSTqjyxWJLsCk"]
+CMD [ "python", "./main.py" , "<BOT TOKEN HERE>"]
