@@ -38,7 +38,7 @@ async def korso(ctx):
     
     await ctx.send('KORSON RAMBO')
     filename = await YTDLSource.from_url('https://www.youtube.com/watch?v=_GdTW9V6hY4', loop=bot.loop)
-    voice_client.play(discord.FFmpegPCMAudio(executable="ffmpeg.exe", source=filename))
+    voice_client.play(discord.FFmpegPCMAudio(executable="ffmpeg", source=filename))
 
 
 
@@ -50,7 +50,7 @@ async def play(ctx,url):
 
         async with ctx.typing():
             filename = await YTDLSource.from_url(url, loop=bot.loop)
-            voice_client.play(discord.FFmpegPCMAudio(executable="ffmpeg.exe", source=filename))
+            voice_client.play(discord.FFmpegPCMAudio(executable="ffmpeg", source=filename))
         await ctx.send('**Now playing:** {}'.format(filename))
     except:
         ctx.send('Error trying to play the song.')
