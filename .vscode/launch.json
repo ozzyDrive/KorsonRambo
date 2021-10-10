@@ -10,7 +10,7 @@
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
-            "args": ["ODkyNDgxNzcxNTgzNzA5MTk0.YVNiaw.pAINdEspTAb6j_xvMoSoreyrgOk"]
+            "args": ["<BOT TOKEN HERE>"]
         }
     ]
 }
