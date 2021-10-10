@@ -1,3 +1,6 @@
 *.m4a
 *.webm
 *.log
+*.ogg
+*.part
+__pycache__/
