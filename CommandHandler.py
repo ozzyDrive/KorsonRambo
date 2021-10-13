@@ -16,10 +16,8 @@ class CommandHandler:
 
         @bot.command(name='korso')
         async def korso(ctx):
-            await self.music_player.add('https://www.youtube.com/watch?v=_GdTW9V6hY4')
-            await self.music_player.play(ctx)
+            await self.music_player.play(ctx, 'https://www.youtube.com/watch?v=_GdTW9V6hY4')
         
         @bot.command(name='play')
         async def play(ctx, url):
-            await self.music_player.add(url)
-            await self.music_player.play(ctx)
+            await self.music_player.play(ctx, url)
